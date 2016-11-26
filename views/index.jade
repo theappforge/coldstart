@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= film.title
+  div
+    a(href='/rate?like=true&id=' + film.id)
+      button Yes
+    a(href='/rate?like=false&film=' + film.id)
+      button No
